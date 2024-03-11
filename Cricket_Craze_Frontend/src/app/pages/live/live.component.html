@@ -1,0 +1,18 @@
+
+ <!-- live comonent whole body --> 
+ <!-- main div of live component -->
+<div>
+    <h1 class="text-4xl font-bold text-indigo-50">Live Cricket Score</h1>
+    
+   <div class="card-container grid sm:grid-cols-12">
+    @for (match of liveMatches; track $index) {
+        <div class="m-2 sm:col-span-6 lg:col-span-4">
+            <app-match-card [match]="match"></app-match-card>
+        </div>
+
+    }
+    @empty {
+        there is no match
+    }
+   </div>
+</div>

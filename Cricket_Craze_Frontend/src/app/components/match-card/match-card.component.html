@@ -1,0 +1,27 @@
+@if (match) {
+    <!-- each card of my match -->
+    <div class="card  border p-4 h-[100%] rounded-xl bg-red-700">
+        <div class="header border-b-2">
+             <h1 class="font-bold">{{match.teamHeading}}</h1>
+             <p>{{match.matchNumberVenue}}</p>
+        </div>
+        <div class="mt-4">
+            <div class="max-w-md mx-autooverflow-hidden shadow-lg ">
+                <div class="flex grid-cols-2 justify-between mt-3 ">
+                    <p class="font-bold">{{match.battingTeam}}</p>
+                    <p class="font-bold">{{match.battingTeamScore}}</p>
+                </div>
+                <div class="flex grid-cols-2 justify-between my-3">
+                    <p class="font-bold">{{match.bowlTeam}}</p>
+                    <p class="font-bold">{{match.bowlTeamScore}}</p>
+                </div>
+                
+              </div> 
+        </div>
+        <div class="footer">
+            <p class="text-blue-300">{{match.liveText}}</p>
+            <p class="text-green-300">{{match.textComplete}}</p>
+        </div>
+    </div>
+    
+}

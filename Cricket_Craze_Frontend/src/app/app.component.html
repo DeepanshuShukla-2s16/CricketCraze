@@ -1,0 +1,17 @@
+<header class="bg-gray-900  text-white py-4 shadow-white " style="box-shadow: 2px 2px 10px rgb(141, 140, 140);">
+    <div class="container mx-auto flex justify-between items-center ">
+        <h1 class=" mx-4 text-3xl font-bold">CricketCraze</h1>
+        <nav>
+            <ul class="flex space-x-4 mx-4">
+                <li><a [routerLink]="'/home'" href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a [routerLink]="'/live'" href="#" class="hover:text-gray-400">Live Matchs</a></li>
+                <li><a [routerLink]="'/history'" href="#" class="hover:text-gray-400">History</a></li>
+                <li><a [routerLink]="'/point-table'" href="#" class="hover:text-gray-400">Point-Table</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="px-16 py-4 ">
+    <router-outlet></router-outlet>
+</div>
